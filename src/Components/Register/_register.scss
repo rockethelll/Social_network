@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2em auto;
+  input {
+    margin: 0.5em 0 1.5em 0;
+    padding: 0.3em 0 0.3em 1em;
+    width: 20vw;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 4px 1px grey;
+    &:hover {
+      background: #f3f3f3;
+    }
+    &:focus {
+      outline: rgb(170, 0, 255) 2px solid;
+      background: #dcd3d3;
+    }
+  }
+}
+
+h2 {
+  margin: 2em 1em;
+  text-align: center;
+}

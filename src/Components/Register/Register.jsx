@@ -1,5 +1,4 @@
 import Cookies from 'js-cookie'
-import { Navigate } from 'react-router-dom';
 
 const FormAuth = () => {
 
@@ -34,16 +33,18 @@ const FormAuth = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <>
       <h2>Inscription</h2>
-      <label>Name</label>
-      <input type="text" name="name" placeholder='username' />
-      <label>Email</label>
-      <input type="text" name="email" placeholder='email' />
-      <label>Password</label>
-      <input type="password" name="password" placeholder='Mot de passe' />
-      <input type="submit" />
-    </form>
+      <form onSubmit={handleSubmit}>
+        <label>Name</label>
+        <input type="text" name="name" placeholder='username' />
+        <label>Email</label>
+        <input type="text" name="email" placeholder='email' />
+        <label>Password</label>
+        <input type="password" name="password" placeholder='Mot de passe' />
+        <input type="submit" />
+      </form>
+    </>
   );
 };
 

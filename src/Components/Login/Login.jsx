@@ -1,5 +1,4 @@
 import Cookies from 'js-cookie'
-import Button from '../Button/Button.jsx';
 import { Navigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { LoginContext } from '../Context/Context.jsx';
@@ -33,7 +32,6 @@ const Login = () => {
     
     if (response.ok) {
       toggleIsLogin()
-      console.log(!isLogin)
     }
 
     Cookies.set('token', responseData.jwt)
@@ -44,8 +42,6 @@ const Login = () => {
   <>
     { isLogin ? <Navigate to = '/' /> : (
     <>
-      <Button onClick={handleSubmit} value={'Se connecter'} />
-      <h1>username: {responseData.username}</h1>
       <form onSubmit={handleSubmit}>
         <h2>Login</h2>
         <label>Name</label>

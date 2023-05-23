@@ -7,7 +7,6 @@ import Home from './Components/Home/Home.jsx';
 import LoginContextProvider from './Components/Context/Context.jsx';
 
 function App() {
-
   return (
     <>
       <LoginContextProvider>

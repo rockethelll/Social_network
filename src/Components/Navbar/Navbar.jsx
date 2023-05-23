@@ -18,8 +18,12 @@ const Navbar = () => {
       <Link to='/'>Accueil</Link>
       <Link to='/signup'>Inscription</Link>
       <Link to='/login'>Login</Link>
-      <Link to='/users/me'>Profil</Link>
-      {isLogin ? <Button onClick={logoutClick} value={'Se déconnecter'} /> : null}
+      {isLogin ?
+        <>
+          <Link to='/users/me'>Profil</Link>
+          <Button onClick={logoutClick} value={'Se déconnecter'} /> 
+        </>
+        : null  }
     </nav>
   )
 }

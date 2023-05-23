@@ -1,10 +1,16 @@
 @use './Components/Navbar/navbar';
-@use './Components/Register/register.scss';
+@use './Components/Register/register';
 @use './variables';
 @use './Components/Button/button';
+@use './Components/Profil/profile';
+@use './Components/Home/home';
 
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+#root {
+  height: 100vh;
 }
