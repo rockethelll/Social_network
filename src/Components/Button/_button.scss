@@ -1,0 +1,15 @@
+@use '../../variables' as *;
+
+button {
+  background: crimson;
+  color: $secondary-color;
+  padding: 0.5em 0.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px black;
+  transition: 0.4s ease;
+  &:hover {
+    background: rgb(58, 85, 222);
+  }
+}

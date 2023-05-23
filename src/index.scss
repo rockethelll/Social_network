@@ -1,0 +1,10 @@
+@use './Components/Navbar/navbar';
+@use './Components/Register/register.scss';
+@use './variables';
+@use './Components/Button/button';
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
