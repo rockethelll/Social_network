@@ -1,7 +1,7 @@
 
-const Button = ({ logoutClick, value }) => {
+const Button = ({ onClick, value }) => {
   return (
-    <button onClick={logoutClick} >{value}</button>
+    <button onClick={onClick} >{value}</button>
   );
 };
 
